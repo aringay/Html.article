@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2d2d2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0 20px; /* Add some padding for small screens */
+        }
+        .login-container {
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            width: 90%; /* Fluid width for responsiveness */
+            max-width: 400px; /* Max width for larger screens */
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: dimgray;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            .login-container {
+                padding: 15px;
+            }
+            .login-container h2 {
+                font-size: 1.5em; /* Adjust heading size */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .login-container {
+                padding: 20px; /* More padding for medium devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="/index.html" method="GET">
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="submit" value="Log In">
+    </form>
+</div>
+
+</body>
+</html>
