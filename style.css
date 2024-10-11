@@ -52,7 +52,7 @@ nav ul li a:hover {
 }
 
 .background-overlay {
-  background-image: url('/images/b.jpg');
+  background-image: url('images/b.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px;
